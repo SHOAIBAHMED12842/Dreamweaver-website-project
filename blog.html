@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blog</title>
+<link rel="stylesheet" href="css/style.css">
+
+
+ <link type="text/css" href="css/menu.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+
+	<script type="text/javascript" src="js/menu.js"></script>        
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+<!-- Add Button helper (this is optional) -->
+<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css" />
+
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js"></script>
+
+<script src="jQueryAssets/jquery-ui-1.9.2.datepicker.custom.min.js" type="text/javascript"></script>
+		<!-- Run the plugin -->
+		<script type="text/javascript">
+			$(window).load(function() {
+				
+				$('.fancybox').fancybox();
+				$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+			});
+		</script>
+</head>
+<body>
+<div id="row1">
+  <header class="first-header">
+    	<div class="left-first-header">
+    	  <ul>
+            <li>Subscribe to:</li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Comments</a></li>
+            <li><a href="#">Email</a></li>
+          </ul>
+   	  </div><!--left-first-header-->
+      
+      <div class="right-first-header">
+    	  <ul>
+            <li><a href="#"><img src="BMIMAGES/rss-icon.png" width="16" height="16"  alt=""/></a></li>
+            <li><a href="#"><img src="BMIMAGES/fb-icon.png" width="16" height="16"  alt=""/></a></li>
+            <li><a href="#"><img src="BMIMAGES/twitter-icon.png" width="16" height="16"  alt=""/></a></li>
+          </ul>
+          
+          <form>
+          <input type="search" placeholder="Search Keywords">
+          <input type="submit" value="Go">
+          </form>
+   	  </div><!--right-first-header-->
+      
+  </header><!--first-header-->
+</div><!--#row1-->
+<div id="row2">
+  <header class="second-header">
+    <div id="logo">
+    <h1 id="backtotop"><a href="index.html"><img src="BMIMAGES/logo.png" width="276" height="41"  alt="Blue Masters"/></a></h1>
+	<h2>completely unique wordpress theme</h2>
+    </div><!--logo-->
+    <nav>
+    <div id="menu">
+    <ul class="menu">
+        <li><a href="index.html" class="parent"><span>Home</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Sub Item 1</span></a>
+                    <div><ul>
+                        <li><a href="#" class="parent"><span>Sub Item 1.1</span></a>
+                            <div><ul>
+                                <li><a href="#"><span>Sub Item 1.1.1</span></a></li>
+                                <li><a href="#"><span>Sub Item 1.1.2</span></a></li>
+                            </ul></div>
+                        </li>
+                        <li><a href="#"><span>Sub Item 1.2</span></a></li>
+                        <li><a href="#"><span>Sub Item 1.3</span></a></li>
+                        <li><a href="#"><span>Sub Item 1.4</span></a></li>
+                        <li><a href="#"><span>Sub Item 1.5</span></a></li>
+                        <li><a href="#"><span>Sub Item 1.6</span></a></li>
+                        <li><a href="#" class="parent"><span>Sub Item 1.7</span></a>
+                            <div><ul>
+                                <li><a href="#"><span>Sub Item 1.7.1</span></a></li>
+                                <li><a href="#"><span>Sub Item 1.7.2</span></a></li>
+                            </ul></div>
+                        </li>
+                    </ul></div>
+                </li>
+                <li><a href="#"><span>Sub Item 2</span></a></li>
+                <li><a href="#"><span>Sub Item 3</span></a></li>
+            </ul></div>
+        </li>
+        <li><a href="about.html" class="parent"><span>About</span></a>
+            <div><ul>
+                <li><a href="#" class="parent"><span>Sub Item 1</span></a>
+                    <div><ul>
+                        <li><a href="#"><span>Sub Item 1.1</span></a></li>
+                        <li><a href="#"><span>Sub Item 1.2</span></a></li>
+                    </ul></div>
+                </li>
+                <li><a href="#" class="parent"><span>Sub Item 2</span></a>
+                    <div><ul>
+                        <li><a href="#"><span>Sub Item 2.1</span></a></li>
+                        <li><a href="#"><span>Sub Item 2.2</span></a></li>
+                    </ul></div>
+                </li>
+                <li><a href="#"><span>Sub Item 3</span></a></li>
+                <li><a href="#"><span>Sub Item 4</span></a></li>
+                <li><a href="#"><span>Sub Item 5</span></a></li>
+                <li><a href="#"><span>Sub Item 6</span></a></li>
+                <li><a href="#"><span>Sub Item 7</span></a></li>
+            </ul></div>
+        </li>
+        <li><a href="Website Templet 3/portfolio.html"><span>Portfolio</span></a></li>
+         <li><a href="blog.html"><span>Blog</span></a></li>
+         
+        <li class="last"><a href="contacts.html"><span>Contacts</span></a></li>
+    </ul>
+     <a href="http://apycom.com/"></a>
+</div>
+    </nav>
+  </header><!--second-header-->
+</div><!--#row2-->
+<div id="row3">
+
+    
+</div><!--#row3-->
+<div id="row4">
+<div id="innercontentblog">  
+  <div class="innerfirstcontentblog">
+<pre><img src="images/blog2pics5.png">Blog</pre>
+<h2>Creation of Beaches</h2>
+<h5>Posted in: Photography on Tuesday, April 12th, 2010</h5>
+  <img src="images/blogslider.png" width="599" height="154" alt=""/>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et risus non arcu porttitor feugi
+at in at neque. In hac habitasse platea dictumst. Proin pretium neque at turpis fermentum de
+aliquet. Ut risus nisi, scelerisque in convallis et, volutpat malesuada elit. Ut nulla libero, condi
+entum eget scelerisque eget, blandit sit amet metus. Suspendisse potenti...</p>
+  <h6>Tags: Beach, Vacations, Ocean, Sea</h6>
+  
+  <a href="#"><img src="images/blog.png" width="103" height="40"  alt=""/></a>
+   <a href="#"><img src="images/blog1.png" width="103" height="40"  alt=""/></a>
+   <ul>
+   <li><h2><a href="#"></a>Brazilian Vacations</h2></li>
+   <li><h5><a href="#">
+</a>Posted in: Photography on Tuesday, April 12th, 2010</h5></li>
+   
+<li><a><img src="images/blogslider2.png" width="599" height="154"  alt=""/></a></li>
+
+<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et risus non arcu porttitor feugi
+at in at neque. In hac habitasse platea dictumst. Proin pretium neque at turpis fermentum de
+aliquet. Ut risus nisi, scelerisque in convallis et, volutpat malesuada elit. Ut nulla libero, condi
+entum eget scelerisque eget, blandit sit amet metus. Suspendisse potenti...</p></li>
+
+   </ul>
+   <div class="third">
+   <h6>Tags: Beach, Vacations, Ocean, Sea</h6>
+   <a href="#"><img src="images/blog.png" width="103" height="40"  alt=""/></a>
+   <a href="#"><img src="images/blog1.png" width="103" height="40"  alt=""/></a>
+   </div><!--third-->
+
+  </div><!--innerfirstcontentblog-->
+  
+  <div id="innersecondcontentblog">
+<div class="innersecondcontentblog">
+  <a href="#"><img src="images/about123.png" width="267" height="48"  alt=""/></a>
+   <img src="images/browsers.jpg" width="221" height="84"  alt=""/>
+   <p>Lorem ipsum dolor sit amet, consec
+tetur adipiscing elit. Nullam et risus 
+non arcu porttitor feugi at in at ne
+que. In hac habitasse platea dictu
+mst. Proin pretium.</p>
+</div><!--innersecondcontentblog-->
+<div class="innersecondcontent1blog">
+<a href="#"><img src="images/about1234.png" width="267" height="48"  alt=""/></a> 
+<ul>
+<li><a href="#"><img src="images/123.png" width="247" height="41"  alt=""/></a></li>
+<li><a href="#"><img src="images/1234.png" width="247" height="41"  alt=""/></a></li>
+<li><a href="#"><img src="images/12345.png" width="247" height="41"  alt=""/></a></li>
+<li><a href="#"><img src="images/123456.png" width="247" height="41"  alt=""/></a></li>
+<li><a href="#"><img src="images/1234567.png" width="247" height="41"  alt=""/></a></li>
+</ul>
+</div><!--innersecondcontent1blog-->
+<div class="innersecondcontent2blog">
+<a href="#"><img src="images/about12345.png" width="267" height="48"  alt=""/></a>
+<ul>
+<li><a href="#"><img src="images/9876.png" width="247" height="41"  alt=""/></a></li>
+<li><a href="#"><img src="images/98765.png" width="247" height="41"  alt=""/></a></li>
+<li><a href="#"><img src="images/987654.png" width="247" height="41"  alt=""/></a></li>
+<li><a href="#"><img src="images/9876543.png" width="247" height="41"  alt=""/></a></li>
+
+<li><a href="#"><img src="images/987654321.png" width="247" height="41"  alt=""/></a></li>
+</ul>
+
+</div><!--innersecondcontent2blog-->
+<div class="innersecondcontent3blog">
+<a href="#"><img src="images/about123456.png" width="267" height="48"  alt=""/></a>
+<ul>
+<li><a href="#"><img src="images/147.png" width="247" height="41"  alt=""/></a></li>
+<li><a href="#"><img src="images/1472.png" width="247" height="41"  alt=""/></a></li>
+
+</ul>
+
+</div><!--innersecondcontent3blog-->
+<div class="innersecondcontent4blog">
+<a href="#"><img src="images/about1234567.png" width="267" height="48"  alt=""/></a>
+<ul>
+ <li><a href="#"><img src="BMIMAGES/tw1.png" width="30" height="30"  alt=""/></a></li>
+        <li><a href="#"><img src="BMIMAGES/fb.png" width="30" height="30"  alt=""/></a></li>
+        <li><a href="#"><img src="BMIMAGES/pic.png" width="30" height="30"  alt=""/></a></li>
+        <li><a href="#"><img src="BMIMAGES/in.png" width="30" height="30"  alt=""/></a></li>
+        <li><a href="#"><img src="BMIMAGES/tw2.png" width="30" height="30"  alt=""/></a></li>
+        <li><a href="#"><img src="BMIMAGES/yt.png" width="30" height="30"  alt=""/></a></li>
+      
+</ul>
+
+</div><!--innersecondcontent4blog-->
+</div><!--#innersecondcontentblog-->
+  </div><!--#innercontentblog-->
+  	
+ 
+</div><!--#row4-->
+
+<div id="row5">
+	<footer class="first">
+    
+    <div class="footer1-col">
+    <h2>About Us</h2>
+    <ul>
+        <li> <a href="#">Our Company </a></li>
+        <li><a href="#">Our Blog </a></li>
+        <li><a href="#">Submit a Site </a></li>
+        <li><a href="#">Contact Us </a></li>
+        <li><a href="#">Help & Terms </a></li>
+        <li><a href="#">Read Our FAQ </a></li>
+      </ul>
+    </div><!--footer1-col-->
+    <div class="footer1-col">
+    <h2>Categories</h2>
+    <ul>
+        <li> <a href="#">Trends & Technology </a></li>
+        <li><a href="#">Design Companies </a></li>
+        <li><a href="#">Design Freelancers </a></li>
+        <li><a href="#">Web Portfolios </a></li>
+        <li><a href="#">Web Development </a></li>
+        <li><a href="#">General Icons</a></li>
+      </ul>
+    </div><!--footer1-col-->
+    <div class="footer1-gal">
+    <h2>From The Gallery</h2>
+    <ul>
+	<li> <a class="fancybox-buttons" data-fancybox-group="button"  href="BMIMAGES/Wallpaper_ (1).jpg"><img src="BMIMAGES/gallery-p1.jpg"></a></li>
+    <li> <a class="fancybox-buttons" data-fancybox-group="button"  href="BMIMAGES/Wallpaper_ (2).jpg"><img src="BMIMAGES/gallery-p2.jpg"></a></li>
+    <li> <a class="fancybox-buttons" data-fancybox-group="button"  href="BMIMAGES/Wallpaper_ (3).jpg"><img src="BMIMAGES/gallery-p3.jpg"></a></li>
+    <li> <a class="fancybox-buttons" data-fancybox-group="button" href="BMIMAGES/Wallpaper_ (4).jpg"><img src="BMIMAGES/gallery-p4.jpg"></a></li>
+    <li> <a class="fancybox-buttons" data-fancybox-group="button" href="BMIMAGES/Wallpaper_ (5).jpg"><img src="BMIMAGES/gallery-p5.jpg"></a></li>
+    <li> <a class="fancybox-buttons" data-fancybox-group="button"  href="BMIMAGES/Wallpaper_ (6).jpg"><img src="BMIMAGES/gallery-p6.jpg"></a></li>
+    <li> <a class="fancybox-buttons" data-fancybox-group="button"  href="BMIMAGES/Wallpaper_ (7).jpg"><img src="BMIMAGES/gallery-p7.jpg"></a></li>
+    <li> <a class="fancybox-buttons" data-fancybox-group="button" href="BMIMAGES/Wallpaper_ (8).jpg"><img src="BMIMAGES/gallery-p8.jpg"></a></li>
+    </div><!--footer1-gal-->
+    <div class="footer1-twit">
+    <h2>Twitter Updates</h2>
+    <p><a href="#">@Dellustrations</a> there is a new designer in 
+town people! It’s amazing How you can do
+everything inside twitter! <a href="#">http://bit.urds</a><br>
+<span>2 minutes ago via <a href="#">TweeterDeck</a></span>
+</p>
+    </div>
+    
+  </footer><!--first-->
+</div><!--#row5-->
+
+<div id="row6">
+	<footer class="second">
+    <p>&copy; 2015 Copyright iPadMasters Theme. All Rights Reserved.</p>
+    <ul>
+    <li><a href="#">Log in</a></li>
+    <li><a href="#"> Privacy Policy</a></li>
+    <li><a href="#">Terms and Conditions</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#backtotop">Back to Top </a></li>
+    </ul>
+    </footer><!--second-->
+</div><!--#row6-->
+
+</body>
+</html>
